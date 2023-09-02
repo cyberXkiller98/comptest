@@ -27,6 +27,7 @@ elemUprav::elemUprav(QWidget *parent) : QWidget(parent)
     QGridLayout *sliderGrid= new QGridLayout;
     QSlider *vSlider = new QSlider(Qt::Vertical);
     vSlider->setMaximum(100);
+    vSlider->setScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     connect(vSlider, SIGNAL(valueChanged(int)), this, SLOT(SliderChanged(int)));
 //    vSlider->setTickPosition(QSlider::TicksBothSides);
 //    vSlider->setTickInterval(10);
